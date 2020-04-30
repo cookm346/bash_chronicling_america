@@ -1,17 +1,16 @@
 # Bash script to download and process Chronicling America newspaper corpus
 
-This bash script will download all 2000+ tar.bz2 files by extracting out the necessary information from the .json file located at: https://chroniclingamerica.loc.gov/ocr.json 
+This bash script will download all 2000+ tar.bz2 files by extracting out the necessary information from the .json file located at: https://chroniclingamerica.loc.gov/ocr.json The script will then untar and unzip the file, extract the .txt files, and organize the files into seperate directories.
 
-The script will then untar and unzip the file, extract the .txt files, and organize the files into seperate directories.
-
-warning: The entire corpus is well over 500GB of text files.
+warning: the entire corpus is well over 500GB of text files.
 
 ### Prerequisites
 
 1. Download the download_files.sh script from this repository and move it to your working directory
-2. Make a downloads and text directoryr with
+2. Make a downloads and text directory with:
 ```bash
 mkdir ./downloads
+mkdir ./text
 ```
 3. Download the jq library .json parser
 ```bash
